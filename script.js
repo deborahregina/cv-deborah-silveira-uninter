@@ -16,10 +16,8 @@ function validaForm() {
     if (name == "" || regName.test(name)) {
         alert("Por favor, entre com um assunto válido");
         name.focus();
-
         return false;
     }
-
     if(what == "") {
         alert("Escreva uma mensagem mais longa");
         what.focus();
