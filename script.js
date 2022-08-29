@@ -19,6 +19,12 @@ function validaForm() {
 
         return false;
     }
+
+    if(what == "") {
+        alert("Escreva uma mensagem mais longa");
+        what.focus();
+        return false;
+    }
      
     if (email == "" || !regEmail.test(email)) {
         alert("Por favor, digite um email válido");
